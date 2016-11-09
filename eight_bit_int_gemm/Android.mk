@@ -15,7 +15,7 @@
 LOCAL_PATH:=$(call my-dir)
 
 include $(CLEAR_VARS)
-LOCAL_CLANG := true
+LOCAL_CLANG := false
 LOCAL_MODULE := libbnnmlowp
 
 LOCAL_CPP_EXTENSION := .cc
@@ -25,7 +25,7 @@ LOCAL_C_INCLUDES += external/gemmlowp/
 include $(BUILD_STATIC_LIBRARY)
 
 include $(CLEAR_VARS)
-LOCAL_CLANG := true
+LOCAL_CLANG := false
 LOCAL_MODULE := libbnnmlowpV8
 
 LOCAL_SDK_VERSION := 9
